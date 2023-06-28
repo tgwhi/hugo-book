@@ -1,3 +1,70 @@
 /* You can add custom styles here. */
 
 // @import "plugins/numbered";
+:root {
+    counter-reset: figure;
+}
+
+.book-menu a.active {
+    color: var(--syntax-type);
+    font-weight: 800;
+}
+
+.book-toc a {
+    color: var(--syntax-type);
+}
+
+.book-toc * > li.active > a {
+    font-weight: 800;
+}
+
+h1, h2, h3, h4, h5, h6, .book-toc-content {
+    code {
+        color: var(--body-font-color);
+    }
+}
+
+code {
+    color: var(--pink-3);
+}
+
+div.blank-area {
+    min-height: 90vh;
+}
+
+figure {
+    img {
+        display: block;
+        margin: auto;
+        padding: .5rem;
+        background-color: #fff;
+    }
+
+    svg {
+        display: block;
+        margin: auto;
+        padding: .5rem;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+    }
+
+    .attribution {
+        font-size: $font-size-12;
+        text-align: center;
+    }
+
+    figcaption {
+        margin-top: .5rem;
+        text-align: center;
+    }
+}
+
+figure.half-width svg, figure.half-width img {
+    width: 50%;
+}
+
+figcaption::before {
+    counter-increment: figure;
+    content: "Figure " counter(figure) ": ";
+}

@@ -21,6 +21,7 @@
 
       {{ partial "docs/inject/content-before" . }}
       {{ template "main" . }} <!-- Page Content -->
+      <div class="blank-area"></div>
       {{ partial "docs/inject/content-after" . }}
 
       <footer class="book-footer">
@@ -40,6 +41,8 @@
       </div>
     </aside>
     {{ end }}
+
+
   </main>
 
   {{ partial "docs/inject/body" . }}

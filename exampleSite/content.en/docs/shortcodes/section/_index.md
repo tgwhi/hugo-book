@@ -1,5 +1,6 @@
 ---
 bookCollapseSection: true
+bookToC: false
 ---
 
 # Section

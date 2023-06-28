@@ -9,7 +9,6 @@ body {
   color: var(--body-font-color);
   background: var(--body-background);
 
-  letter-spacing: 0.33px;
   font-weight: $body-font-weight;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -57,7 +56,7 @@ aside nav ul {
   }
 
   a:hover {
-    opacity: 0.5;
+    opacity: 0.85;
   }
 
   ul {
@@ -110,7 +109,7 @@ ul.pagination {
 
   a,
   label {
-    color: inherit;
+    color: var(--syntax-type);
     cursor: pointer;
     word-wrap: break-word;
   }
@@ -228,7 +227,7 @@ body[dir="rtl"] .book-menu {
 
 .book-toc {
   flex: 0 0 $toc-width;
-  font-size: $font-size-12;
+  font-size: $font-size-14;
 
   .book-toc-content {
     width: $toc-width;

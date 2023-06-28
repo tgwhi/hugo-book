@@ -1,3 +1,15 @@
 /* You can override SASS variables here. */
 
 // @import "plugins/dark";
+
+:root {
+    --pink-3: #ff9bce;
+    --syntax-comment: #8b949e;
+    --syntax-constant: #79c0ff;
+    --syntax-entity: #d2a8ff;
+    --syntax-error: #f85149;
+    --syntax-keyword: #ff7b72;
+    --syntax-number: #f8e3a1;
+    --syntax-string: #a5d6ff;
+    --syntax-type: #c9d1d9;
+}
