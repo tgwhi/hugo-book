@@ -68,3 +68,15 @@ figcaption::before {
     counter-increment: figure;
     content: "Figure " counter(figure) ": ";
 }
+
+li::marker {
+    color: var(--syntax-type);
+}
+
+ul > li > ul > li::marker {
+    color: var(--body-font-color);
+}
+
+ol li::marker {
+    font-size: $font-size-14;
+}
