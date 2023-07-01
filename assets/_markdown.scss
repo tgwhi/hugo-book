@@ -51,11 +51,11 @@
   }
 
   h5 {
-    font-size: 0.875em;
+    font-size: 1.0625rem;
   }
 
   h6 {
-    font-size: 0.75em;
+    font-size: 1rem;
   }
 
   b,
@@ -124,10 +124,9 @@
 
   table {
     overflow: auto;
-    display: block;
     border-spacing: 0;
     border-collapse: collapse;
-    margin: $padding-16 0;
+    margin: auto;
 
     tr th,
     tr td {

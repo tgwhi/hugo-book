@@ -2,7 +2,7 @@
 
 // @import "plugins/numbered";
 :root {
-    counter-reset: figure;
+    counter-reset: figure tbl;
 }
 
 .book-menu a.active {
@@ -67,6 +67,16 @@ figure.half-width svg, figure.half-width img {
 figcaption::before {
     counter-increment: figure;
     content: "Figure " counter(figure) ": ";
+}
+
+table caption {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+table caption::before {
+    counter-increment: tbl;
+    content: "Table " counter(tbl) ": ";
 }
 
 li::marker {
