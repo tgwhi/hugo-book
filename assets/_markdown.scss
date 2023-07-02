@@ -74,6 +74,7 @@
 
     &:hover {
       text-decoration: underline;
+      opacity: 0.75;
     }
     &:visited {
       color: var(--color-visited-link);
