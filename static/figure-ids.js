@@ -9,6 +9,7 @@ if (typeof(figures) != 'undefined' && figures != null) {
 
 if (typeof(tables) != 'undefined' && tables != null) {
   for (let j = 0; j < tables.length; j++) {
-    tables[j].setAttribute('id', 'table-' + (j + 1));
+    let currentId = tables[j].getAttribute('id');
+    tables[j].setAttribute('id', currentId + ' table-' + (j + 1));
   }
 }
