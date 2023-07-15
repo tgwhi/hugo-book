@@ -1,1 +1,7 @@
-<h1>{{ .Page.Title }}</h1>
+<h1>
+{{ with .Param "display_title" }}
+    {{ . }}
+{{ else }}
+    {{ .Page.Title }}
+{{ end }}
+</h1>

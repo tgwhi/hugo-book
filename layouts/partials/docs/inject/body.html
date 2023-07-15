@@ -17,3 +17,7 @@
 	events: false // if true, emit custom events
 
 });</script>
+
+{{ if .Param "23-t2" }}
+<script defer src="{{ "23-t2-weeks.js" | relURL }}"></script>
+{{ end }}

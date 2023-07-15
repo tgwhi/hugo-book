@@ -94,3 +94,14 @@ ul > li > ul > li::marker {
 ol li::marker {
     font-size: $font-size-14;
 }
+
+table.timetable {
+    tr td {
+        height: 4rem;
+    }
+
+    tr td,
+    tr th {
+        vertical-align: middle;
+    }
+}
