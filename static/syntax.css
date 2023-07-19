@@ -31,7 +31,7 @@
 /* NameNamespace */ .chroma .nn, .code-inline .nn { color: var(--body-font-color); }
 /* NameOther */ .chroma .nx, .code-inline .nx { color: var(--body-font-color); }
 /* NameProperty */ .chroma .py, .code-inline .py { color: var(--body-font-color); }
-/* NameTag */ .chroma .nt, .code-inline .nt { color: var(--body-font-color); }
+/* NameTag */ .chroma .nt, .code-inline .nt { color: var(--syntax-nametag); }
 /* NameVariable */ .chroma .nv, .code-inline .nv { color: var(--body-font-color); }
 /* NameVariableClass */ .chroma .vc, .code-inline .vc { color: var(--body-font-color); }
 /* NameVariableGlobal */ .chroma .vg, .code-inline .vg { color: var(--body-font-color); }

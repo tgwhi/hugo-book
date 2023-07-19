@@ -87,8 +87,12 @@ li::marker {
     color: var(--syntax-type);
 }
 
-ul > li > ul > li::marker {
+article > ul > li > ul > li::marker {
     color: var(--body-font-color);
+}
+
+article > ul > li > ul > li > ul > li {
+    list-style-type: '– ';
 }
 
 ol li::marker {
