@@ -1,10 +1,12 @@
 @import "variables";
 
 .markdown {
+  font-size: $font-size-18;
+
   line-height: 1.6;
 
   // remove padding at the beginning of page
-  > :first-child {
+  > :first-child:not(ul) {
     margin-top: -1rem;
   }
 
@@ -33,35 +35,38 @@
   }
 
   h1 {
-    font-size: 2rem;
-    font-weight: 600;
+    margin-top: 0;
+    font-size: $font-size-32;
   }
 
   h2 {
-    font-size: 1.625rem;
-    font-weight: 500;
+    font-size: $font-size-28;
+    font-weight: 400;
   }
 
   h3 {
-    font-size: 1.375rem;
+    font-size: $font-size-24;
   }
 
   h4 {
-    font-size: 1.125rem;
+    font-size: $font-size-20;
   }
 
   h5 {
-    font-size: 1.0625rem;
+    font-size: $font-size-19;
   }
 
   h6 {
-    font-size: 1rem;
+    font-size: $font-size-18;
   }
 
-  h4,
+  h4 {
+    font-weight: 600;
+  }
+
   h5,
   h6 {
-    font-weight: 600;
+    font-weight: 700;
   }
 
   b,
@@ -91,7 +96,7 @@
     padding: $padding-2 $padding-3;
     background: var(--neutral-muted);
     border-radius: $border-radius;
-    font-size: 0.875em;
+    font-size: 87.5%;
   }
 
   pre {
@@ -103,6 +108,7 @@
     code {
       padding: 0;
       background: none;
+      font-size: $font-size-14;
     }
   }
 
@@ -133,7 +139,7 @@
     overflow: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    margin: auto;
+    margin: .75rem auto;
 
     tr th,
     tr td {

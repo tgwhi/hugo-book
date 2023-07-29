@@ -5,21 +5,38 @@
     counter-reset: figure tbl;
 }
 
-.book-menu a.active {
+.book-menu a.active,
+.book-toc * > li.active > a code,
+.book-toc * > li.active > a {
     color: var(--syntax-type);
-    font-weight: 800;
+    opacity: 100%;
+    font-weight: 900;
+}
+
+.book-page h1 {
+    margin-top: 0;
+    font-size: $font-size-32;
+    font-weight: 500;
+}
+
+.book-toc-content {
+    margin-top: .25rem;
 }
 
 .book-toc a {
     color: var(--syntax-type);
+    opacity: 90%;
 }
 
-.book-toc * > li.active > a {
-    font-weight: 800;
-}
-
-.markdown h1, h2, h3, h4, h5, h6, .book-toc-content {
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6,
+.book-toc-content {
     code {
+        font-size: 93.75%;
         color: var(--body-font-color);
         padding: 0 !important;
         border-radius: 0 !important;
@@ -27,9 +44,8 @@
     }
 }
 
-h1 {
-    margin-top: 0;
-    font-weight: 600;
+.book-toc-content code {
+    color: var(--syntax-type);
 }
 
 div.blank-area {
@@ -64,6 +80,12 @@ figure {
     }
 }
 
+figure.no-bg > img,
+figure.no-bg > svg {
+    padding: 0;
+    background-color: transparent;
+}
+
 figure.half-width svg, figure.half-width img {
     width: 50%;
 }
@@ -96,7 +118,7 @@ article > ul > li > ul > li > ul > li {
 }
 
 ol li::marker {
-    font-size: $font-size-14;
+    font-size: $font-size-16;
 }
 
 table.timetable {
@@ -107,5 +129,19 @@ table.timetable {
     tr td,
     tr th {
         vertical-align: middle;
+    }
+}
+
+.markdown {
+    .mt-4 {
+        margin-top: .25rem;
+    }
+
+    .mt-8 {
+        margin-top: .5rem;
+    }
+    
+    .mt-16 {
+        margin-top: 1rem;
     }
 }

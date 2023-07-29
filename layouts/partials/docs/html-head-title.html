@@ -1,1 +1,5 @@
-{{ partial "docs/title" . }} - {{ with .File }}{{ substr .Dir 0 7 | upper }}{{ end }} | {{ .Site.Title -}}
+{{ partial "docs/title" . }}
+{{ if not .Params.disable_path }}
+   - {{ with .File }}{{ substr .Dir 0 7 | upper }}{{ end }}
+{{ end }}
+ | {{ .Site.Title -}}
