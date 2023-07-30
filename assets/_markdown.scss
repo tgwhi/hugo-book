@@ -72,18 +72,14 @@
   b,
   optgroup,
   strong {
-    font-weight: bolder;
+    font-weight: 800;
   }
 
   a {
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
       opacity: 0.75;
-    }
-    &:visited {
-      color: var(--color-visited-link);
     }
   }
 

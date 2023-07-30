@@ -145,3 +145,14 @@ table.timetable {
         margin-top: 1rem;
     }
 }
+
+code a {
+    color: var(--syntax-comment);
+    opacity: 80%;
+}
+
+@media (hover: hover) {
+    .markdown code a:hover {
+        color: var(--body-font-color);
+    }
+}
