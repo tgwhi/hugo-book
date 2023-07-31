@@ -146,6 +146,10 @@ table.timetable {
     }
 }
 
+blockquote .attrib {
+    margin: -.5rem 0 0 1.25rem;
+}
+
 code a {
     color: var(--syntax-comment);
     opacity: 80%;
