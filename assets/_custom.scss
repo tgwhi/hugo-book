@@ -155,6 +155,15 @@ code a {
     opacity: 80%;
 }
 
+pre:has(.language-directory) {
+    line-height: 1.2;
+}
+
+pre {
+    max-height: 24rem;
+    overflow-y: auto;
+}
+
 @media (hover: hover) {
     .markdown code a:hover {
         color: var(--body-font-color);
