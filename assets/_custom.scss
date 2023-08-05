@@ -164,6 +164,10 @@ pre {
     overflow-y: auto;
 }
 
+.markdown li p + p {
+    margin-top: .5rem;
+}
+
 @media (hover: hover) {
     .markdown code a:hover {
         color: var(--body-font-color);
