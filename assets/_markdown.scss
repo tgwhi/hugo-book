@@ -6,7 +6,7 @@
   line-height: 1.6;
 
   // remove padding at the beginning of page
-  > :first-child:not(ul) {
+  > :first-child:not(ul):not(p) {
     margin-top: -1rem;
   }
 
