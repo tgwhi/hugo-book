@@ -1,5 +1,5 @@
 {{ partial "docs/title" . }}
 {{ if not .Params.disable_path }}
-   - {{ with .File }}{{ substr .Dir 0 7 | upper }}{{ end }}
+   - {{ with .File }}{{ substr .Dir 6 7 | upper }}{{ end }}
 {{ end }}
  | {{ .Site.Title -}}
