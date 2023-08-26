@@ -74,9 +74,17 @@ figure {
         text-align: center;
     }
 
-    figcaption {
+    .figcap-wrapper {
+        max-width: 85%;
         margin-top: .5rem;
+        margin-right: auto;
+        margin-left: auto;
         text-align: center;
+    }
+
+    figcaption {
+        display: inline-block;
+        text-align: justify;
     }
 }
 
@@ -90,9 +98,18 @@ figure.half-width svg, figure.half-width img {
     width: 50%;
 }
 
+figure.tqtr-width svg, figure.tqtr-width img {
+    width: 75%;
+}
+
 figcaption::before {
     counter-increment: figure;
-    content: "Figure " counter(figure) ": ";
+    content: "Figure " counter(figure) ". ";
+    font-weight: 800;
+}
+
+table tr th:empty {
+    display: none;
 }
 
 table caption {
@@ -102,7 +119,8 @@ table caption {
 
 table caption::before {
     counter-increment: tbl;
-    content: "Table " counter(tbl) ": ";
+    content: "Table " counter(tbl) ". ";
+    font-weight: 800;
 }
 
 li::marker {

@@ -238,6 +238,16 @@ body[dir="rtl"] .book-menu {
   nav > ul > li:first-child {
     margin-top: 0;
   }
+
+  nav ul li:has(ul):before {
+    position: absolute;
+    left: .25rem;
+    top: 2rem;
+    content: "";
+    height: calc(100% - 2rem);
+    width: 0;
+    border-left: .09375rem solid var(--gray-400);
+  }
 }
 
 .book-footer {
