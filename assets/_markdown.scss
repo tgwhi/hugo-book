@@ -173,6 +173,14 @@
     }
   }
 
+  ol > li > ol {
+    list-style-type: lower-alpha;
+
+    > li > ol {
+      list-style-type: lower-roman;
+    }
+  }
+
   dl {
     dt {
       font-weight: bolder;

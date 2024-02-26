@@ -151,6 +151,17 @@ table.timetable {
     }
 }
 
+table.merged {
+    tr th,
+    tr td {
+        border-color: var(--gray-400);
+    }
+
+    tbody > tr {
+        background: none !important;
+    }
+}
+
 .markdown {
     .mt-4 {
         margin-top: .25rem;
