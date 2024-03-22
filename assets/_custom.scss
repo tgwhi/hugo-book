@@ -44,10 +44,9 @@
     }
 }
 
-.text-center {
+p.text-center {
     display: block;
     text-align: center;
-    font-size: $font-size-14;
 }
 
 .book-toc-content code {
@@ -118,7 +117,7 @@ figure {
 }
 
 .owl-carousel .carousel-item figure {
-    height: 38rem;
+    height: 30rem;
     img, svg {
         max-height: calc(100% - 2rem);
         width: auto;
@@ -131,12 +130,14 @@ figure.no-bg > svg {
     background-color: transparent;
 }
 
-figure.half-width svg, figure.half-width img {
-    width: 50%;
+figure.half-width, figure.half-width {
+    width: 50% !important;
+    margin: auto;
 }
 
-figure.tqtr-width svg, figure.tqtr-width img {
+figure.tqtr-width, figure.tqtr-width {
     width: 75%;
+    margin: auto;
 }
 
 figcaption:not(.carousel-caption):not(.external)::before {
