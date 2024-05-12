@@ -175,6 +175,10 @@ table caption::before {
     font-weight: 800;
 }
 
+table.top-align td {
+    vertical-align: top;
+}
+
 li::marker {
     color: var(--syntax-type);
 }
