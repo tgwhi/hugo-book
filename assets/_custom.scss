@@ -132,8 +132,8 @@ figure {
     }
 }
 
-figure.no-bg > img,
-figure.no-bg > svg {
+figure.no-bg img,
+figure.no-bg svg {
     padding: 0;
     background-color: transparent;
 }
