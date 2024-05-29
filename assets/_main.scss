@@ -7,7 +7,7 @@ html {
 body {
   min-width: $body-min-width;
   color: var(--body-font-color);
-  background: var(--body-background);
+  background: var(--menu-background);
 
   font-weight: $body-font-weight;
   text-rendering: optimizeLegibility;
@@ -95,7 +95,7 @@ ul.pagination {
   .book-menu-content {
     width: $menu-width;
     padding: $padding-16;
-    background: var(--body-background);
+    background: var(--menu-background);
 
     @include fixed;
   }
@@ -127,6 +127,16 @@ ul.pagination {
   input.toggle:checked + label::after {
     content: "▾";
   }
+
+  nav ul li:has(ul):before {
+    position: absolute;
+    left: .25rem;
+    top: 2rem;
+    content: "";
+    height: calc(100% - 2rem);
+    width: 0;
+    border-left: .09375rem solid var(--gray-300);
+  }
 }
 
 // for RTL support
@@ -155,6 +165,7 @@ body[dir="rtl"] .book-menu {
 }
 
 .book-page {
+  background: var(--article-background);
   min-width: $body-min-width;
   flex-grow: 1;
   padding: $padding-16;
@@ -220,6 +231,7 @@ body[dir="rtl"] .book-menu {
 }
 
 .book-toc {
+  background: var(--article-background);
   flex: 0 0 $toc-width;
   font-size: $font-size-16;
 
