@@ -13,6 +13,16 @@
     font-size: $font-size-14;
 }
 
+li {
+    > em {
+        color: var(--flamingo);
+    }
+
+    > strong {
+        color: var(--teal);
+    }
+}
+
 .book-menu a.active,
 .book-toc * > li.active > a code,
 .book-toc * > li.active > a {

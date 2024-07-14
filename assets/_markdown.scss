@@ -93,8 +93,9 @@
   }
 
   code {
+    color: #e2e7f8;
     padding: $padding-2 $padding-3;
-    background: var(--neutral-muted);
+    background: var(--surface-0);
     border-radius: $border-radius;
     font-size: 87.5%;
   }
@@ -133,6 +134,8 @@
     :last-child {
       margin-bottom: 0;
     }
+
+    opacity: 0.85;
   }
 
   table {
@@ -143,7 +146,7 @@
 
     tr th,
     tr td {
-      padding: $padding-8 $padding-16;
+      padding: $padding-8 $padding-8;
       border: $padding-1 solid var(--gray-200);
     }
 
