@@ -106,7 +106,7 @@ figure {
     }
     
     .figcap-wrapper {
-        max-width: 85%;
+        max-width: 95%;
         margin-top: .5rem;
         margin-right: auto;
         margin-left: auto;
@@ -115,7 +115,9 @@ figure {
     
     figcaption {
         display: inline-block;
-        text-align: justify;
+        font-size: 0.9375rem;
+        text-align: left;
+        margin-bottom: 1rem;
     }
 
     figcaption.carousel-caption {
