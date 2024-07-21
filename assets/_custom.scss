@@ -26,7 +26,7 @@ li {
 .book-menu a.active,
 .book-toc * > li.active > a code,
 .book-toc * > li.active > a {
-    color: var(--syntax-type);
+    color: var(--subtext-1);
     opacity: 100%;
     font-weight: 900;
 }
@@ -42,7 +42,7 @@ li {
 }
 
 .book-toc a {
-    color: var(--syntax-type);
+    color: var(--subtext-0);
     opacity: 90%;
 }
 
