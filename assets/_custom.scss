@@ -26,7 +26,7 @@ li {
 .book-menu a.active,
 .book-toc * > li.active > a code,
 .book-toc * > li.active > a {
-    color: var(--subtext-1);
+    color: var(--mauve);
     opacity: 100%;
     font-weight: 900;
 }
@@ -55,7 +55,6 @@ li {
 .book-toc-content {
     code {
         font-size: 93.75%;
-        color: var(--body-font-color);
         padding: 0 !important;
         border-radius: 0 !important;
         background: none !important;
@@ -65,10 +64,6 @@ li {
 p.text-center {
     display: block;
     text-align: center;
-}
-
-.book-toc-content code {
-    color: var(--syntax-type);
 }
 
 div.blank-area {
@@ -117,7 +112,6 @@ figure {
         display: inline-block;
         font-size: 0.9375rem;
         text-align: left;
-        margin-bottom: 1rem;
     }
 
     figcaption.carousel-caption {
@@ -152,12 +146,14 @@ figure.no-bg svg {
 
 figure.half-width, figure.half-width {
     width: 50% !important;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figure.tqtr-width, figure.tqtr-width {
     width: 75%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figcaption:not(.carousel-caption):not(.external)::before {
@@ -192,7 +188,7 @@ table.top-align td {
 }
 
 li::marker {
-    color: var(--syntax-type);
+    color: var(--subtext-1);
 }
 
 article > ul > li > ul > li::marker {
