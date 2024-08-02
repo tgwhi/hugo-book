@@ -2,48 +2,56 @@
 
 // @import "plugins/numbered";
 :root {
-    counter-reset: figure tbl;
+  counter-reset: figure tbl;
 }
 
 .font-size-12 {
-    font-size: $font-size-12;
+  font-size: $font-size-12;
 }
 
 .font-size-14 {
-    font-size: $font-size-14;
+  font-size: $font-size-14;
+}
+
+.font-size-18 {
+  font-size: $font-size-18;
+}
+
+.font-size-20 {
+  font-size: $font-size-20;
 }
 
 li {
-    > em {
-        color: var(--flamingo);
-    }
+  > em {
+    color: var(--flamingo);
+  }
 
-    > strong {
-        color: var(--teal);
-    }
+  > strong {
+    color: var(--teal);
+  }
 }
 
 .book-menu a.active,
 .book-toc * > li.active > a code,
 .book-toc * > li.active > a {
-    color: var(--mauve);
-    opacity: 100%;
-    font-weight: 900;
+  color: var(--mauve);
+  opacity: 100%;
+  font-weight: 900;
 }
 
 .book-page h1 {
-    margin-top: 0;
-    font-size: $font-size-32;
-    font-weight: 500;
+  margin-top: 0;
+  font-size: $font-size-32;
+  font-weight: 500;
 }
 
 .book-toc-content {
-    margin-top: .25rem;
+  margin-top: 0.25rem;
 }
 
 .book-toc a {
-    color: var(--subtext-0);
-    opacity: 90%;
+  color: var(--subtext-0);
+  opacity: 90%;
 }
 
 .markdown h1,
@@ -53,220 +61,232 @@ li {
 .markdown h5,
 .markdown h6,
 .book-toc-content {
-    code {
-        font-size: 93.75%;
-        padding: 0 !important;
-        border-radius: 0 !important;
-        background: none !important;
-    }
+  code {
+    font-size: 93.75%;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: none !important;
+  }
 }
 
 p.text-center {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 div.blank-area {
-    min-height: 90vh;
+  min-height: 90vh;
 }
 
 .carousel-item figure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
 }
 
 figure {
-    img {
-        display: block;
-        margin: auto;
-        padding: .5rem;
-        background-color: #fff;
-    }
-    
-    svg {
-        display: block;
-        margin: auto;
-        padding: .5rem;
-        width: 100%;
-        height: auto;
-        background-color: #fff;
-    }
-    
-    .attribution {
-        font-size: $font-size-12;
-        font-style: italic;
-        text-align: center;
-    }
-    
-    .figcap-wrapper {
-        max-width: 95%;
-        margin-top: .5rem;
-        margin-right: auto;
-        margin-left: auto;
-        text-align: center;
-    }
-    
-    figcaption {
-        display: inline-block;
-        font-size: 0.9375rem;
-        text-align: left;
-    }
+  img {
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+    background-color: #fff;
+  }
 
-    figcaption.carousel-caption {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
+  svg {
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+  }
 
-    figcaption.carousel-caption,
-    figcaption.external {
-        margin-top: 1rem;
-        display: block;
-        font-size: $font-size-14;
-        text-align: center;
-    }
+  .attribution {
+    font-size: $font-size-12;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .figcap-wrapper {
+    max-width: 95%;
+    margin-top: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  figcaption {
+    display: inline-block;
+    font-size: 0.9375rem;
+    text-align: left;
+  }
+
+  figcaption.carousel-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  figcaption.carousel-caption,
+  figcaption.external {
+    margin-top: 1rem;
+    display: block;
+    font-size: $font-size-14;
+    text-align: center;
+  }
 }
 
 .owl-carousel .carousel-item figure {
-    height: 30rem;
-    img, svg {
-        max-height: calc(100% - 2rem);
-        width: auto;
-    }
+  height: 30rem;
+  img,
+  svg {
+    max-height: calc(100% - 2rem);
+    width: auto;
+  }
 }
 
 figure.no-bg img,
 figure.no-bg svg {
-    padding: 0;
-    background-color: transparent;
+  padding: 0;
+  background-color: transparent;
 }
 
-figure.half-width, figure.half-width {
-    width: 50% !important;
-    margin-left: auto;
-    margin-right: auto;
+figure.half-width,
+figure.half-width {
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-figure.tqtr-width, figure.tqtr-width {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+figure.tqtr-width,
+figure.tqtr-width {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figcaption:not(.carousel-caption):not(.external)::before {
-    counter-increment: figure;
-    content: "Figure " counter(figure) ". ";
-    font-weight: 800;
+  counter-increment: figure;
+  content: 'Figure ' counter(figure) '. ';
+  font-weight: 800;
 }
 
 table tr th:empty {
-    display: none;
+  display: none;
 }
 
 table caption {
-    .table-attrib {
-        font-size: $font-size-12;
-        font-style: italic;
-        text-align: center;
-    }
-
-    margin-bottom: .5rem;
+  .table-attrib {
+    font-size: $font-size-12;
+    font-style: italic;
     text-align: center;
+  }
+
+  font-size: $font-size-14;
+  width: 85%;
+  text-align: justify;
+  margin: 0.5rem auto;
 }
 
 table caption::before {
-    counter-increment: tbl;
-    content: "Table " counter(tbl) ". ";
-    font-weight: 800;
+  counter-increment: tbl;
+  content: 'Table ' counter(tbl) '. ';
+  font-weight: 800;
 }
 
 table.top-align td {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 li::marker {
-    color: var(--subtext-1);
+  color: var(--subtext-1);
 }
 
 article > ul > li > ul > li::marker {
-    color: var(--body-font-color);
+  color: var(--body-font-color);
 }
 
 article > ul > li > ul > li > ul > li {
-    list-style-type: '– ';
+  list-style-type: '– ';
 }
 
 ol li::marker {
-    font-size: $font-size-16;
+  font-size: $font-size-16;
 }
 
 table.timetable {
-    tr td {
-        height: 4rem;
-    }
-    
-    tr td,
-    tr th {
-        vertical-align: middle;
-    }
+  tr td {
+    height: 4rem;
+  }
+
+  tr td,
+  tr th {
+    vertical-align: middle;
+  }
 }
 
 table.merged {
-    tr th,
-    tr td {
-        border-color: var(--gray-400);
-    }
-    
-    tbody > tr {
-        background: none !important;
-    }
+  tr th,
+  tr td {
+    border-color: var(--gray-400);
+  }
+
+  tbody > tr {
+    background: none !important;
+  }
 }
 
 .markdown {
-    .mt-4 {
-        margin-top: .25rem;
-    }
-    
-    .mt-8 {
-        margin-top: .5rem;
-    }
-    
-    .mt-16 {
-        margin-top: 1rem;
-    }
+  .mt-4 {
+    margin-top: 0.25rem;
+  }
+
+  .mt-8 {
+    margin-top: 0.5rem;
+  }
+
+  .mt-16 {
+    margin-top: 1rem;
+  }
 }
 
 blockquote .attrib {
-    margin: -.5rem 0 0 1.25rem;
+  margin: -0.5rem 0 0 1.25rem;
 }
 
 code a {
-    color: var(--syntax-comment);
-    opacity: 80%;
+  color: var(--syntax-comment);
+  opacity: 80%;
 }
 
 pre:has(.language-directory) {
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 pre {
-    max-height: 24rem;
-    overflow-y: auto;
+  max-height: 24rem;
+  overflow-y: auto;
 }
 
 span.katex {
-    font-size: 1.1953125rem;
+  font-size: 1.1953125rem;
 }
 
 .markdown li p + p {
-    margin-top: .5rem;
+  margin-top: 0.5rem;
+}
+
+.subheading {
+  font-size: $font-size-20;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 1rem 0;
 }
 
 @media (hover: hover) {
-    .markdown code a:hover {
-        color: var(--body-font-color);
-    }
+  .markdown code a:hover {
+    color: var(--body-font-color);
+  }
 }
