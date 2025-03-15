@@ -22,7 +22,7 @@
       {{ partial "docs/inject/content-before" . }}
       {{ template "main" . }} <!-- Page Content -->
       <div class="blank-area"></div>
-      {{ partial "docs/inject/content-after" . }}
+            {{ partial "docs/inject/content-after" . }}
 
       <footer class="book-footer">
         {{ template "footer" . }} <!-- Footer under page content -->
@@ -41,8 +41,6 @@
       </div>
     </aside>
     {{ end }}
-
-
   </main>
 
   {{ partial "docs/inject/body" . }}
@@ -76,7 +74,7 @@
 {{ end }}
 
 {{ define "main" }}
-  <article class="markdown">
+  <article class="markdown book-article">
     {{- .Content -}}
   </article>
 {{ end }}
