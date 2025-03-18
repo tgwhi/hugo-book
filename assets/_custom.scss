@@ -153,14 +153,24 @@ figure.no-bg svg {
   background-color: transparent;
 }
 
-figure.half-width,
+figure.qtr-width {
+  width: 25% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure.third-width {
+  width: 33.333% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 figure.half-width {
   width: 50% !important;
   margin-left: auto;
   margin-right: auto;
 }
 
-figure.tqtr-width,
 figure.tqtr-width {
   width: 75%;
   margin-left: auto;
@@ -268,6 +278,10 @@ pre:has(.language-directory) {
 pre {
   max-height: 24rem;
   overflow-y: auto;
+}
+
+h2 span.katex {
+  font-size: 2rem;
 }
 
 span.katex {
